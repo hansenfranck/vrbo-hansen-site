@@ -94,3 +94,11 @@ nav a:hover {
   width: 300px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   dis
+.property-item img {
+  max-width: 100% !important;
+  max-height: 300px !important;
+  height: auto !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 10px auto !important;
+}
