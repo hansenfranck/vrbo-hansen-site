@@ -1,69 +1,96 @@
-body {
-  font-family: Arial, sans-serif;
+/* style.css - VRBO HANSEN LTD */
+
+/* Reset simplu */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
-header, footer {
-  background: #003366;
+
+/* Header */
+header {
+  background-color: #004080;
   color: white;
-  text-align: center;
-  padding: 1em 0;
-}
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-}
-.banner {
-  background: #0059b3;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-.btn {
-  background: #ffffff;
-  color: #0059b3;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.properties {
-  max-width: 900px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 25px 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.properties h2 {
+  padding: 15px 20px;
   margin-bottom: 20px;
-  color: #004080;
-  font-size: 2rem;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner section */
+.banner {
+  background-color: #cce0ff;
+  padding: 30px 20px;
   text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
 }
-.property-list {
-  display: grid;
-  grid-template-columns: 1fr;
+
+.banner h2 {
+  margin-bottom: 10px;
+}
+
+.banner p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.btn {
+  background-color: #004080;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* Properties list */
+.properties, .property-gallery {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+.property-list, .property-gallery {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
-.property h3 {
-  margin-bottom: 8px;
-  color: #003366;
-  font-size: 1.3rem;
-}
-.property p {
-  font-size: 1.1rem;
-  color: #555;
-}
-@media(min-width: 600px) {
-  .property-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(min-width: 900px) {
-  .property-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+
+/* Individual property box */
+.property, .property-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  dis
